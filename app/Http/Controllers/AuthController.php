@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use App\Models\Resi;
 
 class AuthController extends Controller
 {
@@ -75,6 +76,12 @@ public function updatePassword(Request $request)
     $user->save();
 
     return redirect()->back()->with('success', 'Kata sandi berhasil diubah.');
+}
+
+public function showResi($id)
+{
+    $resi = Resi::findOrFail($id);
+    return view('resi', compact('resi'));
 }
 
 }
