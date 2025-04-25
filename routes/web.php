@@ -31,3 +31,4 @@ Route::get('/resi', function () {
 Route::get('/keranjang', function () {
     return view('keranjang');
 });
+

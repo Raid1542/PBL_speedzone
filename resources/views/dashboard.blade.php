@@ -10,9 +10,6 @@
   <!-- Navbar -->
  
     <!-- Tombol Search -->
-  <!-- Navbar -->
- 
-    <!-- Tombol Search -->
     <nav class="hover:bg-[#faf9f4] shadow-md p-4 flex flex-col md:flex-row md:justify-between md:items-center gap-4">
   <!-- Logo -->
   <div class="w-30 h-30 object-cover">
@@ -35,14 +32,11 @@
 
   <!-- Menu Navigasi -->
   <div class="flex justify-center md:justify-end items-center space-x-2">
-    <a href="#" class="text-gray-700 hover:text-[#F8F8FF] hover:bg-[#c6a11a] px-3 py-2 rounded font-semibold transition">Produk</a>
-    <a href="#" class="text-gray-700 hover:text-[#F8F8FF] hover:bg-[#c6a11a] px-3 py-2 rounded font-semibold transition">Keranjang</a>
-    <a href="#" class="text-gray-700 hover:text-[#F8F8FF] hover:bg-[#c6a11a] px-3 py-2 rounded font-semibold transition">Profil</a>
+    <a href="produk" class="text-gray-700 hover:text-[#F8F8FF] hover:bg-[#c6a11a] px-3 py-2 rounded font-semibold transition">Produk</a>
+    <a href="keranjang" class="text-gray-700 hover:text-[#F8F8FF] hover:bg-[#c6a11a] px-3 py-2 rounded font-semibold transition">Keranjang</a>
+    <a href="profil" class="text-gray-700 hover:text-[#F8F8FF] hover:bg-[#c6a11a] px-3 py-2 rounded font-semibold transition">Profil</a>
   </div>
 </nav>
-
-
-
 </nav>
 
   <!-- Hero Section -->
@@ -60,30 +54,26 @@
   <div class="flex flex-wrap justify-center gap-6 px-4 md:px-0">
     <!-- Kategori 1 -->
     <div class="relative group w-64 h-40 overflow-hidden rounded-xl shadow-lg">
-      <img src="kategori-yamaha.jpg" alt="YAMAHA" class="object-cover w-full h-full transform group-hover:scale-110 transition duration-300">
+      <img src="images/Yamaha.jpg" alt="YAMAHA" class="object-cover w-full h-full transform group-hover:scale-110 transition duration-300">
       <div class="absolute inset-0 bg-gradient-to-r from-black/30 to-black/10 flex items-center justify-center">
-        <span class="text-blue-900 text-xl font-bold">YAMAHA</span>
       </div>
     </div>
     <!-- Kategori 2 -->
     <div class="relative group w-64 h-40 overflow-hidden rounded-xl shadow-lg">
-      <img src="kategori-classy.jpg" alt="KAWASAKI" class="object-cover w-full h-full transform group-hover:scale-110 transition duration-300">
+      <img src="images/Kawasaki.jpg" alt="KAWASAKI" class="object-cover w-full h-full transform group-hover:scale-110 transition duration-300">
       <div class="absolute inset-0 bg-gradient-to-r from-black/30 to-black/10 flex items-center justify-center">
-        <span class="text-blue-900 text-xl font-bold">KAWASAKI</span>
       </div>
     </div>
     <!-- Kategori 3 -->
     <div class="relative group w-64 h-40 overflow-hidden rounded-xl shadow-lg">
-      <img src="kategori-matic.jpg" alt="DUCATI" class="object-cover w-full h-full transform group-hover:scale-110 transition duration-300">
+      <img src="images/Ducati.jpg" alt="DUCATI" class="object-cover w-full h-full transform group-hover:scale-110 transition duration-300">
       <div class="absolute inset-0 bg-gradient-to-r from-black/30 to-black/10 flex items-center justify-center">
-        <span class="text-blue-900 text-xl font-bold">DUCATI</span>
       </div>
     </div>
     <!-- Kategori 4 -->
     <div class="relative group w-64 h-40 overflow-hidden rounded-xl shadow-lg">
-      <img src="kategori-sport.jpg" alt="HONDA" class="object-cover w-full h-full transform group-hover:scale-110 transition duration-300">
+      <img src="images/Honda.jpg" alt="HONDA" class="object-cover w-full h-full transform group-hover:scale-110 transition duration-300">
       <div class="absolute inset-0 bg-gradient-to-r from-black/30 to-black/10 flex items-center justify-center">
-        <span class="text-blue-900 text-xl font-bold">HONDA</span>
       </div>
     </div>
   </div>
@@ -94,27 +84,29 @@
     <h2 class="text-2xl font-bold mb-6 text-center text-blue-900">Katalog Motor Sport Terlaris</h2>
     <div class="grid md:grid-cols-3 gap-6">
       <!-- Card 1 -->
-      <div class="bg-white rounded-lg shadow p-4">
-        <img src="https://via.placeholder.com/300x180" alt="Motor" class="rounded">
-        <h3 class="text-lg font-semibold mt-4">Yamaha R15 V4</h3>
-        <p class="text-blue-900">Harga: Rp 40.000.000</p>
-        <button class="mt-2 px-4 py-2 bg-[#c6a11a] text-blue-900 rounded hover:bg-blue-200">Detail</button>
-      </div>
-      <!-- Card 2 -->
-      <div class="bg-white rounded-lg shadow p-4">
-        <img src="https://via.placeholder.com/300x180" alt="Motor" class="rounded">
-        <h3 class="text-lg font-semibold mt-4">Yamaha MT-15</h3>
-        <p class="text-blue-900">Harga: Rp 38.500.000</p>
-        <button class="mt-2 px-4 py-2 bg-[#c6a11a] text-blue-900 rounded hover:bg-blue-200">Detail</button>
-      </div>
-      <!-- Card 3 -->
-      <div class="bg-white rounded-lg shadow p-4">
-        <img src="https://via.placeholder.com/300x180" alt="Motor" class="rounded">
-        <h3 class="text-lg font-semibold mt-4">Yamaha R25</h3>
-        <p class="text-blue-900">Harga: Rp 62.000.000</p>
-        <button class="mt-2 px-4 py-2 bg-[#c6a11a] text-blue-900 rounded hover:bg-blue-200">Detail</button>
-      </div>
-    </div>
+      <!-- Card 1 -->
+<div class="bg-white rounded-lg shadow p-4">
+  <img src="Yamaha.jpg" alt="Motor" class="rounded">
+  <h3 class="text-lg font-semibold mt-4">Yamaha R15 V4</h3>
+  <p class="text-blue-900">Harga: Rp 40.000.000</p>
+  <a href="deskripsi" class="mt-2 inline-block px-4 py-2 bg-yellow-500 text-blue-900 rounded hover:bg-yellow-300">Detail</a>
+</div>
+
+<!-- Card 2 -->
+<div class="bg-white rounded-lg shadow p-4">
+  <img src="Ducati.jpg" alt="Motor" class="rounded">
+  <h3 class="text-lg font-semibold mt-4">Ducati</h3>
+  <p class="text-blue-900">Harga: Rp 38.500.000</p>
+  <a href="deskripsi" class="mt-2 inline-block px-4 py-2 bg-yellow-500 text-blue-900 rounded hover:bg-yellow-300">Detail</a>
+</div>
+
+<!-- Card 3 -->
+<div class="bg-white rounded-lg shadow p-4">
+  <img src="Honda.jpg" alt="Motor" class="rounded">
+  <h3 class="text-lg font-semibold mt-4">Honda</h3>
+  <p class="text-blue-900">Harga: Rp 62.000.000</p>
+  <a href="deskripsi" class="mt-2 inline-block px-4 py-2 bg-yellow-500 text-blue-900 rounded hover:bg-yellow-300">Detail</a>
+</div>
   </section>
 
   <!-- Footer -->
