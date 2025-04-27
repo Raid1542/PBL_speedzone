@@ -29,6 +29,7 @@ Route::get('/keranjang', function () {
     return view('keranjang');
 });
 
+
 # Route Pembelian #
 Route::get('/pembelian', function () {
     return view('pembelian');

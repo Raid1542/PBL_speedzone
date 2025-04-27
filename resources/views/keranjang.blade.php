@@ -9,8 +9,8 @@
 <body class="bg-gray-100">
 
   <!-- Header -->
-  <div class="bg-gray-400 p-4 flex justify-between items-center">
-    <a href="#" class="text-2xl font-bold">&larr;</a>
+  <div class="bg-yellow-500 p-4 flex justify-between items-center">
+    <a href="dashboard" class="text-2xl font-bold">&larr;</a>
     <h1 class="text-xl font-semibold text-black">Keranjang</h1>
     <div></div>
   </div>
