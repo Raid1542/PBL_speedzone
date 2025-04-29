@@ -45,12 +45,12 @@
       <h1 class="text-4xl font-bold mb-2">SPEEDZONE</h1>
       <p class="text-lg">Temukan motor sport impianmu. Berkualitas, bergaya, dan bertenaga.</p>
     </div>
-    <img src="motor.png" alt="Motor Sport" class="w-1/3 hidden md:block">
+    <img src="images/Yamaha.jpg" alt="Motor Sport" class="w-1/3 hidden md:block">
   </div>
 
   <!-- Kategori Produk -->
 <section class="bg-[#f3f3f3] py-12">
-  <h2 class="text-2xl md:text-3xl font-bold text-center text-blue-900 mb-10">PRODUCT CATEGORY</h2>
+  <h2 class="text-2xl md:text-3xl font-bold text-center text-blue-900 mb-10">KATEGORI PRODUK</h2>
   <div class="flex flex-wrap justify-center gap-6 px-4 md:px-0">
     <!-- Kategori 1 -->
     <div class="relative group w-64 h-40 overflow-hidden rounded-xl shadow-lg">
@@ -86,25 +86,25 @@
       <!-- Card 1 -->
       <!-- Card 1 -->
 <div class="bg-white rounded-lg shadow p-4">
-  <img src="Yamaha.jpg" alt="Motor" class="rounded">
+  <img src="images/Yamaha.jpg" alt="Motor" class="rounded">
   <h3 class="text-lg font-semibold mt-4">Yamaha R15 V4</h3>
-  <p class="text-blue-900">Harga: Rp 40.000.000</p>
+  <p class="text-blue-900">Rp 40.000.000</p>
   <a href="deskripsi" class="mt-2 inline-block px-4 py-2 bg-yellow-500 text-blue-900 rounded hover:bg-yellow-300">Detail</a>
 </div>
 
 <!-- Card 2 -->
 <div class="bg-white rounded-lg shadow p-4">
-  <img src="Ducati.jpg" alt="Motor" class="rounded">
+  <img src="images/Ducati.jpg" alt="Motor" class="rounded">
   <h3 class="text-lg font-semibold mt-4">Ducati</h3>
-  <p class="text-blue-900">Harga: Rp 38.500.000</p>
+  <p class="text-blue-900">Rp 38.500.000</p>
   <a href="deskripsi" class="mt-2 inline-block px-4 py-2 bg-yellow-500 text-blue-900 rounded hover:bg-yellow-300">Detail</a>
 </div>
 
 <!-- Card 3 -->
 <div class="bg-white rounded-lg shadow p-4">
-  <img src="Honda.jpg" alt="Motor" class="rounded">
+  <img src="images/Honda.jpg" alt="Motor" class="rounded">
   <h3 class="text-lg font-semibold mt-4">Honda</h3>
-  <p class="text-blue-900">Harga: Rp 62.000.000</p>
+  <p class="text-blue-900">Rp 62.000.000</p>
   <a href="deskripsi" class="mt-2 inline-block px-4 py-2 bg-yellow-500 text-blue-900 rounded hover:bg-yellow-300">Detail</a>
 </div>
   </section>

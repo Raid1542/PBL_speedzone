@@ -6,7 +6,7 @@
     <title>Pembelian</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
+<body class="bg-gray-100">
 <div class="w-full min-h-screen bg-white border border-gray-300 shadow-md">
   <!-- Header -->
   <div class="bg-yellow-500 px-4 py-2  flex items-center max-w-full leading-normal tracking-normal">
@@ -62,10 +62,12 @@
       <p>Total Harga : <span class="font-bold">Rp35.000.000</span></p>
       
     </div>
-
+<br>
+<br>
+<br>
     <!-- Tombol Pesan -->
     <div class="text-center mt-6">
-      <a href="#" class="w-60 bg-yellow-400 hover:bg-yellow-500 text-gray-800 font-semibold py-2 px-6 shadow rounded-full inline-block">
+      <a href="resi" class="w-60 bg-yellow-400 hover:bg-yellow-500 text-white font-semibold py-2 px-6 shadow rounded-full inline-block">
       Pesan
       </a>
       </div>

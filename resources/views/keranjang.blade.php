@@ -83,9 +83,8 @@
 
     <!-- Tombol Pesan -->
     <div class="text-center mt-6">
-      <button class="bg-yellow-500 hover:bg-yellow-600 text-white px-8 py-2 rounded shadow-md transition">
-        PESAN
-      </button>
+      <a href="pembelian" class="bg-yellow-500 hover:bg-yellow-600 text-white px-8 py-2 rounded shadow-md transition">
+        PESAN</a>
     </div>
   </div>
 

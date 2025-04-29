@@ -56,7 +56,7 @@ public function register(Request $request)
 
 public function showResetPasswordForm()
 {
-    return view('reset-password');
+    return view('reset_password');
 }
 
 public function updatePassword(Request $request)
