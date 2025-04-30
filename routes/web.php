@@ -50,18 +50,5 @@ Route::get('/produk', function () {
     return view('produk');
 });
 
-# Route Profil #
-Route::get('/profil', function () {
-    return view('profil');
-});
-
-# Route Produk #
-Route::get('/beli_sekarang', function () {
-    return view('beli_sekarang');
-});
-
-Route::get('/penjual_dashboard', function () {
-    return view('penjual_dashboard');
-});
 
 
