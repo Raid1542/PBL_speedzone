@@ -49,12 +49,25 @@ Route::get('/produk', function () {
     return view('produk');
 });
 
-# Edit Profil #
+# Route Edit Profil #
 Route::get('/edit_profil', function () {
     return view('edit_profil');
 });
 
-# Profil #
+# Route Profil #
 Route::get('/profil', function () {
     return view('profil');
 });
+
+# Route Dashboard Admin #
+Route::get('/admin/dashboard', function () {
+    return view('admin.dashboard');
+})->name('dashboard');
+
+# Route Admin Riwayat Transaksi #
+Route::view('/admin/riwayat-transaksi', 'admin.riwayat-transaksi')->name('riwayat-transaksi');
+
+# Route Admin CRUD #
+Route::get('/admin/produk/create', function () {
+    return view('admin..produk.create');
+})->name('create');
