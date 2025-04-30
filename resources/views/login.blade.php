@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login - Web Saya</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-100 flex items-center justify-center min-h-screen">
     <div class="bg-white shadow-lg rounded-xl p-8 w-full max-w-md">
-        <h2 class="text-2xl font-bold text-center text-yellow-600 mb-6">Speedzone</h2>
+        <!-- Logo -->
+        <div class="flex justify-center mb-6">
+            <img src="images/LogoSpeedzone.jpg" alt="Logo Speedzone" class="w-40 h-40 object-cover rounded-full shadow-lg" />
+        </div>
+
+        <!-- Judul -->
+        <h2 class="text-2xl font-bold text-center text-yellow-600 mb-6">Login</h2>
 
         <form method="POST" action="/login">
             @csrf

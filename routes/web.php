@@ -60,4 +60,8 @@ Route::get('/beli_sekarang', function () {
     return view('beli_sekarang');
 });
 
+Route::get('/penjual_dashboard', function () {
+    return view('penjual_dashboard');
+});
+
 
