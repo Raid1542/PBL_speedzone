@@ -32,21 +32,20 @@
 
   <!-- Menu Navigasi -->
   <div class="flex justify-center md:justify-end items-center space-x-2">
-    <a href="produk" class="text-gray-700 hover:text-[#F8F8FF] hover:bg-[#c6a11a] px-3 py-2 rounded font-semibold transition">Produk</a>
-    <a href="keranjang" class="text-gray-700 hover:text-[#F8F8FF] hover:bg-[#c6a11a] px-3 py-2 rounded font-semibold transition">Keranjang</a>
-    <a href="profil" class="text-gray-700 hover:text-[#F8F8FF] hover:bg-[#c6a11a] px-3 py-2 rounded font-semibold transition">Profil</a>
+    <a href="produk" class="text-gray-700 hover:text-[#F8F8FF] hover:bg-yellow-500 px-3 py-2 rounded font-semibold transition">Produk</a>
+    <a href="keranjang" class="text-gray-700 hover:text-[#F8F8FF] hover:bg-yellow-500 px-3 py-2 rounded font-semibold transition">Keranjang</a>
+    <a href="profil" class="text-gray-700 hover:text-[#F8F8FF] hover:bg-yellow-500 px-3 py-2 rounded font-semibold transition">Profil</a>
   </div>
 </nav>
 </nav>
 
   <!-- Hero Section -->
-  <div class="bg-gradient-to-r from-yellow-300 to-yellow-100 text-blue-900 p-10 flex items-center justify-between">
-    <div>
-      <h1 class="text-4xl font-bold mb-2">SPEEDZONE</h1>
-      <p class="text-lg">Temukan motor sport impianmu. Berkualitas, bergaya, dan bertenaga.</p>
-    </div>
-    <img src="images/Yamaha.jpg" alt="Motor Sport" class="w-1/3 hidden md:block">
-  </div>
+<div class="bg-gradient-to-r from-yellow-300 to-yellow-100 text-blue-900 p-10 flex justify-center">
+  <img src="images/P1.jpg" alt="Motor Sport" class="w-2/3 max-w-3xl rounded-lg shadow-lg">
+</div>
+
+  
+
 
   <!-- Kategori Produk -->
 <section class="bg-[#f3f3f3] py-12">
@@ -54,25 +53,25 @@
   <div class="flex flex-wrap justify-center gap-6 px-4 md:px-0">
     <!-- Kategori 1 -->
     <div class="relative group w-64 h-40 overflow-hidden rounded-xl shadow-lg">
-      <img src="images/Yamaha.jpg" alt="YAMAHA" class="object-cover w-full h-full transform group-hover:scale-110 transition duration-300">
+      <img src="images/logoy.jpg" alt="YAMAHA" class="object-cover w-full h-full transform group-hover:scale-110 transition duration-300">
       <div class="absolute inset-0 bg-gradient-to-r from-black/30 to-black/10 flex items-center justify-center">
       </div>
     </div>
     <!-- Kategori 2 -->
     <div class="relative group w-64 h-40 overflow-hidden rounded-xl shadow-lg">
-      <img src="images/Kawasaki.jpg" alt="KAWASAKI" class="object-cover w-full h-full transform group-hover:scale-110 transition duration-300">
+      <img src="images/logok.jpg" alt="KAWASAKI" class="object-cover w-full h-full transform group-hover:scale-110 transition duration-300">
       <div class="absolute inset-0 bg-gradient-to-r from-black/30 to-black/10 flex items-center justify-center">
       </div>
     </div>
     <!-- Kategori 3 -->
     <div class="relative group w-64 h-40 overflow-hidden rounded-xl shadow-lg">
-      <img src="images/Ducati.jpg" alt="DUCATI" class="object-cover w-full h-full transform group-hover:scale-110 transition duration-300">
+      <img src="images/logod.jpg" alt="DUCATI" class="object-cover w-full h-full transform group-hover:scale-110 transition duration-300">
       <div class="absolute inset-0 bg-gradient-to-r from-black/30 to-black/10 flex items-center justify-center">
       </div>
     </div>
     <!-- Kategori 4 -->
     <div class="relative group w-64 h-40 overflow-hidden rounded-xl shadow-lg">
-      <img src="images/Honda.jpg" alt="HONDA" class="object-cover w-full h-full transform group-hover:scale-110 transition duration-300">
+      <img src="images/logoh.jpg" alt="HONDA" class="object-cover w-full h-full transform group-hover:scale-110 transition duration-300">
       <div class="absolute inset-0 bg-gradient-to-r from-black/30 to-black/10 flex items-center justify-center">
       </div>
     </div>
@@ -102,7 +101,7 @@
 
 <!-- Card 3 -->
 <div class="bg-white rounded-lg shadow p-4">
-  <img src="images/Honda.jpg" alt="Motor" class="rounded">
+  <img src="images/Honda1.jpg" alt="Motor" class="rounded">
   <h3 class="text-lg font-semibold mt-4">Honda</h3>
   <p class="text-blue-900">Rp 62.000.000</p>
   <a href="deskripsi" class="mt-2 inline-block px-4 py-2 bg-yellow-500 text-blue-900 rounded hover:bg-yellow-300">Detail</a>

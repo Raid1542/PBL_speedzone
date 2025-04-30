@@ -51,16 +51,25 @@
     </div>
 
     <!-- Fitur Ubah Kata Sandi dan Tombol Logout -->
-    <div class="mt-8 bg-white rounded-lg shadow-lg p-6">
-      <h3 class="text-xl font-semibold text-blue-900 mb-4">Pengaturan Akun</h3>
-      <div class="flex gap-4">
-        <!-- Ubah Kata Sandi -->
-        <a href="reset-password" class="w-full text-center bg-yellow-500 hover:bg-yellow-600 text-white py-2 px-4 rounded">Ubah Kata Sandi</a>
-        <!-- Logout -->
-        <a href="login" class="w-full text-center bg-yellow-500 hover:bg-yellow-600 text-white py-2 px-4 rounded">Logout</a>
-      </div>
-    </div>
-  </main>
+    <!-- Fitur Ubah Kata Sandi, Edit Profil, dan Tombol Logout -->
+<div class="mt-8 bg-white rounded-lg shadow-lg p-6">
+  <h3 class="text-xl font-semibold text-blue-900 mb-4">Pengaturan Akun</h3>
+  <div class="flex flex-col md:flex-row gap-4">
+    <!-- Edit Profil -->
+    <a href="edit_profil" class="w-full text-center bg-yellow-500 hover:bg-yellow-600 text-white py-2 px-4 rounded">
+      Edit Profil
+    </a>
+    <!-- Ubah Kata Sandi -->
+    <a href="reset_password" class="w-full text-center bg-yellow-500 hover:bg-yellow-600 text-white py-2 px-4 rounded">
+      Ubah Kata Sandi
+    </a>
+    <!-- Logout -->
+    <a href="login" class="w-full text-center bg-yellow-500 hover:bg-yellow-600 text-white py-2 px-4 rounded">
+      Logout
+    </a>
+  </div>
+</div>
+
 
 </body>
 </html>

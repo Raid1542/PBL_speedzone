@@ -59,3 +59,5 @@ Route::get('/profil', function () {
 Route::get('/beli_sekarang', function () {
     return view('beli_sekarang');
 });
+
+
