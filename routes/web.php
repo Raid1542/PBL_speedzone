@@ -69,5 +69,5 @@ Route::view('/admin/riwayat-transaksi', 'admin.riwayat-transaksi')->name('riwaya
 
 # Route Admin CRUD #
 Route::get('/admin/produk/create', function () {
-    return view('admin..produk.create');
+    return view('admin.produk.create');
 })->name('create');
