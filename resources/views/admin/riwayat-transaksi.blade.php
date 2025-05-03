@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -32,6 +33,23 @@
 
         <table class="min-w-full text-left border border-gray-700 rounded-lg overflow-hidden">
             <thead class="bg-yellow-500 text-gray-900">
+=======
+@extends('admin.layout')
+
+@section('title', 'Riwayat Transaksi')
+
+@section('konten')
+    <div class="flex justify-between items-center mb-6">
+        <h1 class="text-2xl font-semibold text-yellow-700">Riwayat Transaksi</h1>
+        <button class="bg-yellow-500 hover:bg-yellow-600 text-white font-medium py-2 px-4 rounded-lg shadow">
+            Ekspor
+        </button>
+    </div>
+
+    <div class="overflow-x-auto bg-white rounded-lg shadow">
+        <table class="min-w-full text-left border border-gray-300 rounded-lg overflow-hidden">
+            <thead class="bg-yellow-100 text-yellow-800">
+>>>>>>> 8203dff2196e6a17e1882ed608e4781fc0f84854
                 <tr>
                     <th class="px-4 py-2 border border-gray-700">No</th>
                     <th class="px-4 py-2 border border-gray-700">Tanggal</th>
@@ -55,6 +73,4 @@
             </tbody>
         </table>
     </div>
-
-</body>
-</html>
+@endsection
