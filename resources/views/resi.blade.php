@@ -2,60 +2,62 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Rincian Resi - SPEEDZONE</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+<body class="bg-gray-100 min-h-screen flex items-center justify-center px-4 py-10">
 
-  <div class="bg-white p-8 rounded-2xl shadow-xl w-full max-w-md">
-    
-    <!-- Logo bulat -->
-<!-- Logo bulat dengan gambar -->
-<div class="flex justify-center mb-6">
-  <div class="w-20 h-20 rounded-full overflow-hidden shadow">
-    <img src="images/LogoSpeedzone.jpg" alt="Logo" class="w-full h-full object-cover" />
-  </div>
-</div>
+  <div class="bg-white w-full max-w-xl rounded-2xl shadow-2xl p-8 border border-yellow-500">
 
-    <!-- Informasi Resi -->
-    <div class="text-gray-800 mb-4 space-y-1">
-      <p><strong>ID Resi:</strong> #123456789</p>
-      <p><strong>Nama:</strong> Frima Rizky Lianda</p>
-      <p><strong>Alamat:</strong>  Jl. Contoh Alamat No. 123, Jakarta</p>
-      <p><strong>Rincian Pembelian:</strong></p>
+    <!-- Header -->
+    <div class="text-center mb-8">
+      <h2 class="text-3xl font-extrabold text-yellow-600 tracking-wide">RINCIAN RESI</h2>
+      <p class="text-sm text-gray-500 mt-1">Terima kasih telah berbelanja di <span class="font-semibold">SpeedZone</span></p>
     </div>
 
-    <!-- Tabel Produk -->
-    <div class="overflow-x-auto">
-      <table class="table-auto w-full text-left text-gray-800 border border-gray-400">
-        <tbody>
-          <tr class="bg-gray-200">
-            <th class="border border-gray-300 px-2 py-1">Nama Produk</th>
-            <td class="border border-gray-300 px-2 py-1">Motor Yamaha</td>
-          </tr>
-          <tr>
-            <th class="border border-gray-300 px-2 py-1">Warna</th>
-            <td class="border border-gray-300 px-2 py-1">Kuning</td>
-          </tr>
-          <tr class="bg-gray-200">
-            <th class="border border-gray-300 px-2 py-1">Jumlah</th>
-            <td class="border border-gray-300 px-2 py-1">2</td>
-          </tr>
-          <tr>
-            <th class="border border-gray-300 px-2 py-1">Total</th>
-            <td class="border border-gray-300 px-2 py-1">Rp300.000.000</td>
-          </tr>
-        </tbody>
-      </table>
+    <!-- Informasi Utama -->
+    <div class="mb-6 space-y-2 text-sm text-gray-700">
+      <div class="flex justify-between">
+        <span class="font-medium text-gray-500">ID Resi</span>
+        <span class="font-semibold text-gray-800">#123456789</span>
+      </div>
+      <div class="flex justify-between">
+        <span class="font-medium text-gray-500">Nama</span>
+        <span class="font-semibold text-gray-800">Frima Rizky Lianda</span>
+      </div>
+      <div class="flex justify-between">
+        <span class="font-medium text-gray-500">Alamat</span>
+        <span class="text-right text-gray-800 w-2/3">Jl. Contoh Alamat No. 123, Jakarta</span>
+      </div>
     </div>
 
-    <!-- Tombol -->
-    <div class="text-center mt-6">
-      <a href="/" class="bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-2 rounded shadow-md transition">
-        Selesai
-      </a>
+    <!-- Garis Pemisah -->
+    <div class="border-t border-gray-300 my-4"></div>
+
+    <!-- Rincian Produk -->
+    <div class="text-sm text-gray-700">
+      <h3 class="text-lg font-semibold text-yellow-600 mb-3">Detail Produk</h3>
+      <div class="space-y-2">
+        <div class="flex justify-between">
+          <span class="text-gray-600">Nama Produk</span>
+          <span class="font-medium">Motor Yamaha</span>
+        </div>
+        <div class="flex justify-between">
+          <span class="text-gray-600">Warna</span>
+          <span class="font-medium">merah-hitam</span>
+        </div>
+        <div class="flex justify-between">
+          <span class="text-gray-600">Jumlah</span>
+          <span class="font-medium">1</span>
+        </div>
+        <div class="flex justify-between pt-3 border-t border-gray-300 mt-3 text-base">
+          <span class="font-semibold">Total</span>
+          <span class="font-bold text-yellow-600">Rp40.000.000</span>
+        </div>
+      </div>
     </div>
+
   </div>
 
 </body>

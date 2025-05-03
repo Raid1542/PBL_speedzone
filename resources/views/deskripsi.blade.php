@@ -2,62 +2,55 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Deskripsi Produk | Speedzone</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Detail Produk - SpeedZone</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 text-gray-800 font-sans">
+<body class="bg-gray-900 font-sans text-yellow-300">
 
-  <!-- Header -->
-  <header class="bg-yellow-500 p-6 flex justify-between items-center shadow-md text-xl md:text-2xl">
-    <a href="produk" class="font-bold text-white hover:text-gray-900">&larr;</a>
-    <h1 class="font-bold text-white">Detail Produk</h1>
-    <div></div>
-  </header>
+ <!-- Navbar -->
+ <header class="bg-gradient-to-r from-yellow-400 to-yellow-600 p-6 shadow-lg relative flex items-center justify-center">
+  <!-- Tombol kembali di kiri -->
+  <a href="javascript:history.back()" class="absolute left-6 text-3xl font-semibold text-white hover:text-yellow-200">&larr;</a>
+  <h1 class="text-2xl md:text-3xl font-bold text-white">Detail Produk</h1>
+</header>
 
-  <!-- Wrapper untuk center layout -->
-  <div class="min-h-screen flex items-center justify-center p-6">
-    
-    <!-- Konten -->
-    <main class="max-w-7xl w-full mx-auto p-10 bg-white rounded-xl shadow-2xl grid grid-cols-1 md:grid-cols-2 gap-10">
+<!-- Detail Produk Section -->
+<section class="py-20 px-6 max-w-screen-xl mx-auto">
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
 
-      <!-- Galeri Foto -->
-      <div class="flex flex-col">
-        <img src="images/Yamaha.jpg" alt="Yamaha R15" class="w-full h-[400px] object-cover rounded-lg border border-gray-300 hover:ring-4 hover:ring-yellow-500 transition duration-200">
+    <!-- Gambar Produk -->
+    <div class="relative">
+      <img src="images/Yamaha.jpg" alt="Yamaha R15 V4" class="w-full h-96 object-cover rounded-xl">
+    </div>
+
+    <!-- Deskripsi Produk -->
+    <div class="flex flex-col justify-between">
+      <h2 class="text-4xl font-bold text-yellow-400 mb-4">Yamaha R15 V4</h2>
+      <p class="text-lg text-gray-300 mb-6">
+        Yamaha R15 V4 hadir dengan desain agresif dan performa motor sport tinggi. Dengan teknologi canggih dan pengendalian yang luar biasa, motor ini sangat cocok untuk pengendara yang mencari pengalaman berkendara terbaik.
+      </p>
+
+      <div class="flex items-center gap-6 mb-8">
+        <span class="text-3xl font-semibold text-yellow-500">Rp 50.000.000</span>
       </div>
 
-      <!-- Detail Produk -->
-      <div>
-        <h2 class="text-4xl font-extrabold mb-6 text-blue-900">Yamaha R15 V4</h2>
-        <p class="text-lg text-gray-700 mb-6 leading-relaxed">
-          Motor sport bergaya racing yang dilengkapi teknologi canggih dan performa tinggi. Cocok untuk pecinta kecepatan dan tampilan stylish.
-        </p>
-
-        <ul class="mb-8 text-base text-gray-700 space-y-2">
-          <li><strong>Warna:</strong> Biru-Hitam</li>
-          <li><strong>Kategori:</strong> Yamaha</li>
-          <li><strong>Stok:</strong> 10 unit tersedia</li>
-        </ul>
-
-        <p class="text-3xl font-bold text-blue-900 mb-8">Rp 130.000.000</p>
-
-        <div class="flex gap-6">
-          <a href="keranjang">
-            <button class="bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-3 px-8 rounded-lg text-lg transition">
-              Masukkan Keranjang
-            </button>
-          </a>
-
-          <a href="keranjang">
-            <button class="border border-yellow-500 hover:bg-yellow-100 text-yellow-600 font-semibold py-3 px-8 rounded-lg text-lg transition">
-              Beli Sekarang
-            </button>
-          </a>
-        </div>
+      <div class="flex gap-6 mb-6">
+        <!-- Tombol Tambah ke Keranjang yang sudah diarahkan ke halaman keranjang -->
+        <a href="keranjang" class="bg-yellow-400 text-gray-900 px-8 py-4 rounded-full font-semibold shadow-xl hover:bg-yellow-300 transition duration-300">
+          Tambah ke Keranjang
+        </a>
+        <a href="pembelian" class="bg-yellow-500 text-gray-900 px-8 py-4 rounded-full font-semibold shadow-xl hover:bg-yellow-400 transition duration-300">
+          Beli Sekarang
+        </a>
       </div>
 
-    </main>
+      <div class="mt-8 text-center">
+        <a href="produk" class="text-yellow-400 hover:underline text-sm">Kembali ke Daftar Produk</a>
+      </div>
+    </div>
   </div>
+</section>
 
 </body>
 </html>

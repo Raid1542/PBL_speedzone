@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\ProdukController;
+
 
 Route::get('/', function () {
     return view('welcome');
@@ -71,3 +73,24 @@ Route::view('/admin/riwayat-transaksi', 'admin.riwayat-transaksi')->name('riwaya
 Route::get('/admin/produk/create', function () {
     return view('admin.produk.create');
 })->name('create');
+
+Route::get('/terimakasih', function () {
+    return view('terimakasih');
+});
+
+Route::get('/status_pesanan', function () {
+    return view('status_pesanan');
+});
+
+
+Route::get('/tentang_kami', function () {
+    return view('tentang_kami');
+});
+
+Route::get('/pembayaran', function () {
+    return view('pembayaran');
+});
+
+Route::get('/admin/konfirmasi_pembayaran', function () {
+    return view('admin/konfirmasi_pembayaran');
+});

@@ -1,4 +1,3 @@
-<!-- resources/views/admin/produk/create.blade.php -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,40 +5,40 @@
     <title>Tambah Produk - Admin</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans">
+<body class="bg-gray-900 text-yellow-300 font-sans">
 
-    <div class="max-w-3xl mx-auto mt-10 bg-white p-8 rounded-lg shadow">
-        <h1 class="text-2xl font-semibold text-yellow-700 mb-6">Tambah Produk Baru</h1>
+    <div class="max-w-3xl mx-auto mt-10 bg-gray-800 p-8 rounded-lg shadow-lg">
+        <h1 class="text-2xl font-bold text-yellow-400 mb-6">Tambah Produk Baru</h1>
         <form action="#" method="POST" enctype="multipart/form-data" class="space-y-4">
             <!-- Nama -->
             <div>
-                <label class="block font-medium">Nama Produk</label>
-                <input type="text" name="nama" class="w-full border rounded p-2 bg-gray-50" required>
+                <label class="block font-medium text-yellow-300">Nama Produk</label>
+                <input type="text" name="nama" class="w-full border border-gray-600 rounded p-2 bg-gray-700 text-white" required>
             </div>
             <!-- Deskripsi -->
             <div>
-                <label class="block font-medium">Deskripsi</label>
-                <textarea name="deskripsi" rows="3" class="w-full border rounded p-2 bg-gray-50" required></textarea>
+                <label class="block font-medium text-yellow-300">Deskripsi</label>
+                <textarea name="deskripsi" rows="3" class="w-full border border-gray-600 rounded p-2 bg-gray-700 text-white" required></textarea>
             </div>
             <!-- Harga -->
             <div>
-                <label class="block font-medium">Harga</label>
-                <input type="number" name="harga" class="w-full border rounded p-2 bg-gray-50" required>
+                <label class="block font-medium text-yellow-300">Harga</label>
+                <input type="number" name="harga" class="w-full border border-gray-600 rounded p-2 bg-gray-700 text-white" required>
             </div>
             <!-- Stok -->
             <div>
-                <label class="block font-medium">Stok</label>
-                <input type="number" name="stok" class="w-full border rounded p-2 bg-gray-50" required>
+                <label class="block font-medium text-yellow-300">Stok</label>
+                <input type="number" name="stok" class="w-full border border-gray-600 rounded p-2 bg-gray-700 text-white" required>
             </div>
             <!-- Gambar -->
             <div>
-                <label class="block font-medium">Gambar Produk</label>
-                <input type="file" name="gambar" class="w-full border rounded p-2 bg-gray-50" required>
+                <label class="block font-medium text-yellow-300">Gambar Produk</label>
+                <input type="file" name="gambar" class="w-full border border-gray-600 rounded p-2 bg-gray-700 text-white" required>
             </div>
             <!-- Warna -->
             <div>
-                <label class="block font-medium">Warna</label>
-                <select name="warna" class="w-full border rounded p-2 bg-gray-50">
+                <label class="block font-medium text-yellow-300">Warna</label>
+                <select name="warna" class="w-full border border-gray-600 rounded p-2 bg-gray-700 text-white">
                     <option value="Merah">Merah</option>
                     <option value="Biru">Biru</option>
                     <option value="Hitam">Hitam</option>
@@ -50,11 +49,12 @@
             </div>
             <!-- Kategori -->
             <div>
-                <label class="block font-medium">Kategori</label>
-                <select name="kategori" class="w-full border rounded p-2 bg-gray-50">
+                <label class="block font-medium text-yellow-300">Kategori</label>
+                <select name="kategori" class="w-full border border-gray-600 rounded p-2 bg-gray-700 text-white">
                     <option value="Honda">Honda</option>
                     <option value="Kawasaki">Kawasaki</option>
-                    <option value="Suzuki">Suzuki</option>
+                    <option value="Suzuki">Ducati</option>
+                    <option value="Suzuki">Yamaha</option>
                 </select>
             </div>
             <!-- Submit -->
