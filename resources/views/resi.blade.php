@@ -6,59 +6,86 @@
   <title>Rincian Resi - SPEEDZONE</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 min-h-screen flex items-center justify-center px-4 py-10">
+<body class="bg-gray-900 min-h-screen text-white">
 
-  <div class="bg-white w-full max-w-xl rounded-2xl shadow-2xl p-8 border border-yellow-500">
+  <!-- Navbar -->
+  <header class="bg-gradient-to-r from-yellow-400 to-yellow-600 p-6 shadow-lg relative flex items-center justify-center">
+    <a href="javascript:history.back()" class="absolute left-6 text-3xl font-semibold text-white hover:text-yellow-200">&larr;</a>
+    <h1 class="text-2xl md:text-3xl font-bold text-white">Rincian Resi</h1>
+  </header>
 
-    <!-- Header -->
-    <div class="text-center mb-8">
-      <h2 class="text-3xl font-extrabold text-yellow-600 tracking-wide">RINCIAN RESI</h2>
-      <p class="text-sm text-gray-500 mt-1">Terima kasih telah berbelanja di <span class="font-semibold">SpeedZone</span></p>
-    </div>
 
-    <!-- Informasi Utama -->
-    <div class="mb-6 space-y-2 text-sm text-gray-700">
-      <div class="flex justify-between">
-        <span class="font-medium text-gray-500">ID Resi</span>
-        <span class="font-semibold text-gray-800">#123456789</span>
+  <!-- Konten Utama -->
+  <main class="flex items-center justify-center px-4 py-10">
+    <section class="bg-gray-800 w-full max-w-md rounded-xl shadow p-6">
+
+      <!-- Header -->
+      <div class="text-center mb-6">
+        <h2 class="text-2xl font-bold text-yellow-400">Rincian Resi</h2>
+        <p class="text-sm text-gray-300">
+          Terima kasih telah berbelanja di <span class="font-semibold text-white">SpeedZone</span>
+        </p>
       </div>
-      <div class="flex justify-between">
-        <span class="font-medium text-gray-500">Nama</span>
-        <span class="font-semibold text-gray-800">Frima Rizky Lianda</span>
-      </div>
-      <div class="flex justify-between">
-        <span class="font-medium text-gray-500">Alamat</span>
-        <span class="text-right text-gray-800 w-2/3">Jl. Contoh Alamat No. 123, Jakarta</span>
-      </div>
-    </div>
 
-    <!-- Garis Pemisah -->
-    <div class="border-t border-gray-300 my-4"></div>
+      <!-- Info Utama -->
+      <div class="text-sm text-gray-200 space-y-2 mb-4">
+        <p><span class="font-semibold">ID Resi:</span> 123456</p>
+        <p><span class="font-semibold">Kode Pesanan:</span> ORD-20250504-001</p>
+        <p><span class="font-semibold">Nama:</span> Frima Rizky Lianda</p>
+        <p><span class="font-semibold">Alamat:</span> Jl. Contoh Alamat No. 123, Jakarta</p>
+      </div>
 
-    <!-- Rincian Produk -->
-    <div class="text-sm text-gray-700">
-      <h3 class="text-lg font-semibold text-yellow-600 mb-3">Detail Produk</h3>
-      <div class="space-y-2">
-        <div class="flex justify-between">
-          <span class="text-gray-600">Nama Produk</span>
-          <span class="font-medium">Motor Yamaha</span>
-        </div>
-        <div class="flex justify-between">
-          <span class="text-gray-600">Warna</span>
-          <span class="font-medium">merah-hitam</span>
-        </div>
-        <div class="flex justify-between">
-          <span class="text-gray-600">Jumlah</span>
-          <span class="font-medium">1</span>
-        </div>
-        <div class="flex justify-between pt-3 border-t border-gray-300 mt-3 text-base">
-          <span class="font-semibold">Total</span>
-          <span class="font-bold text-yellow-600">Rp40.000.000</span>
+      <hr class="border-gray-600 my-4"/>
+
+      <!-- Detail Produk -->
+      <div class="text-sm text-gray-100">
+        <h3 class="font-semibold text-yellow-400 mb-2">Detail Produk</h3>
+
+        <!-- Produk -->
+        <div class="space-y-4">
+          <!-- Produk 1 -->
+          <div class="flex justify-between">
+            <div>
+              <p>Kaos Polos</p>
+              <p class="text-xs text-gray-400">Warna: Hitam</p>
+            </div>
+            <div class="text-right">
+              <p>2 pcs</p>
+              <p>Rp 150.000</p>
+            </div>
+          </div>
+
+          <!-- Produk 2 -->
+          <div class="flex justify-between">
+            <div>
+              <p>Celana Jeans</p>
+              <p class="text-xs text-gray-400">Warna: Biru</p>
+            </div>
+            <div class="text-right">
+              <p>1 pcs</p>
+              <p>Rp 349.999</p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
 
-  </div>
+      <hr class="border-gray-600 my-4"/>
+
+      <!-- Total -->
+      <div class="flex justify-between text-sm font-semibold text-white mb-6">
+        <span>Total</span>
+        <span>Rp 649.999</span>
+      </div>
+
+      <!-- Tombol Selesai -->
+      <div class="flex justify-center">
+        <button class="bg-yellow-400 hover:bg-yellow-300 text-black px-6 py-2 rounded-md font-semibold shadow">
+          Selesai
+        </button>
+      </div>
+
+    </section>
+  </main>
 
 </body>
 </html>

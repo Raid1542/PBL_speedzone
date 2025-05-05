@@ -45,28 +45,46 @@
 </section>
 
 <!-- TIM -->
+<!-- Bagian TIM -->
 <section class="py-16 px-6 bg-gray-900">
   <h2 class="text-3xl font-bold text-yellow-400 text-center mb-10">Tim Kami</h2>
   <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+    
+    <!-- Anggota 1 -->
     <div class="text-center hover:bg-gray-800 p-4 rounded-lg transition">
-      <img src="images/lia.jpg" alt="Rizky" class="rounded-full h-24 w-24 mx-auto object-cover mb-3">
+      <img src="images/lia.jpg" alt="Raid" class="rounded-full h-24 w-24 mx-auto object-cover mb-3">
       <p class="font-bold">Raid Aqil Athallah</p>
+      <p class="text-sm text-yellow-300">0812-1111-2222</p>
+      <p class="text-sm text-yellow-300">raid.aqil@email.com</p>
     </div>
+
+    <!-- Anggota 2 -->
     <div class="text-center hover:bg-gray-800 p-4 rounded-lg transition">
-      <img src="images/lia.jpg" alt="Dina" class="rounded-full h-24 w-24 mx-auto object-cover mb-3">
+      <img src="images/lia.jpg" alt="Dionaldi" class="rounded-full h-24 w-24 mx-auto object-cover mb-3">
       <p class="font-bold">Dionaldi Sion Yosua</p>
-      
+      <p class="text-sm text-yellow-300">0812-3333-4444</p>
+      <p class="text-sm text-yellow-300">dionaldi.yosua@email.com</p>
     </div>
+
+    <!-- Anggota 3 -->
     <div class="text-center hover:bg-gray-800 p-4 rounded-lg transition">
-      <img src="images/lia.jpg" alt="Arif" class="rounded-full h-24 w-24 mx-auto object-cover mb-3">
+      <img src="images/lia.jpg" alt="Frima" class="rounded-full h-24 w-24 mx-auto object-cover mb-3">
       <p class="font-bold">Frima Rizky Lianda</p>
+      <p class="text-sm text-yellow-300">0812-5555-6666</p>
+      <p class="text-sm text-yellow-300">frima.rizky@email.com</p>
     </div>
+
+    <!-- Anggota 4 -->
     <div class="text-center hover:bg-gray-800 p-4 rounded-lg transition">
-      <img src="images/lia.jpg" alt="Nina" class="rounded-full h-24 w-24 mx-auto object-cover mb-3">
+      <img src="images/lia.jpg" alt="Asnil" class="rounded-full h-24 w-24 mx-auto object-cover mb-3">
       <p class="font-bold">Asnil Adrian Sagita</p>
+      <p class="text-sm text-yellow-300">0812-7777-8888</p>
+      <p class="text-sm text-yellow-300">asnil.adrian@email.com</p>
     </div>
+
   </div>
 </section>
+
 
 <!-- CTA -->
 <section class="py-20 bg-yellow-500 text-gray-900 text-center">
@@ -78,9 +96,32 @@
 </section>
 
 <!-- FOOTER -->
-<footer class="bg-gray-900 text-yellow-300 py-6 text-center">
-  <p class="text-sm">&copy; 2025 SpeedZone. All rights reserved.</p>
+<footer class="bg-gray-900 text-yellow-300 pt-10 pb-6 mt-12 border-t border-yellow-700">
+  <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+
+    <!-- Branding -->
+    <div>
+      <h3 class="text-xl font-bold text-white mb-2">SpeedZone</h3>
+      <p class="text-sm text-yellow-400">Platform terpercaya jual beli motor sport.</p>
+    </div>
+
+    <!-- Kontak Toko -->
+    <div>
+      <h4 class="text-lg font-semibold mb-2">Hubungi Kami</h4>
+      <p class="text-sm"><span class="font-semibold">Telepon:</span> <a href="tel:+6281234567890" class="hover:underline">+62 812-3456-7890</a></p>
+      <p class="text-sm"><span class="font-semibold">Email:</span> <a href="mailto:support@speedzone.com" class="hover:underline">support@speedzone.com</a></p>
+      <p class="text-sm"><span class="font-semibold">Instagram:</span> <a href="https://instagram.com/speedzone_id" target="_blank" class="hover:underline">@speedzone_id</a></p>
+    </div>
+
+  
+
+  </div>
+
+  <div class="text-center mt-8 text-xs text-yellow-400">
+    &copy; 2025 SpeedZone. All rights reserved.
+  </div>
 </footer>
+
 
 </body>
 </html>

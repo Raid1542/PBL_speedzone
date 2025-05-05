@@ -31,6 +31,9 @@
 
   <!-- Ikon Navigasi -->
   <div class="flex items-center gap-4 text-white text-lg font-semibold">
+  <a href="pesanan_saya" title="Pesanan Saya">
+    <i class="ph ph-list text-3xl hover:text-yellow-900 transition"></i>
+  </a>
     <a href="keranjang" title="Keranjang">
       <i class="ph ph-shopping-cart-simple text-3xl hover:text-yellow-900 transition"></i>
     </a>

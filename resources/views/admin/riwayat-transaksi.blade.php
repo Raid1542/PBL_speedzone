@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -33,44 +33,50 @@
 
         <table class="min-w-full text-left border border-gray-700 rounded-lg overflow-hidden">
             <thead class="bg-yellow-500 text-gray-900">
-=======
-@extends('admin.layout')
 
-@section('title', 'Riwayat Transaksi')
+            @extends('admin.layout')
+
+@section('title', 'Riwayat Transaksi - Admin')
 
 @section('konten')
-    <div class="flex justify-between items-center mb-6">
-        <h1 class="text-2xl font-semibold text-yellow-700">Riwayat Transaksi</h1>
-        <button class="bg-yellow-500 hover:bg-yellow-600 text-white font-medium py-2 px-4 rounded-lg shadow">
-            Ekspor
-        </button>
-    </div>
+    <!-- Header Halaman -->
+    <div class="bg-gray-900 text-yellow-300 py-8 px-4 min-h-screen">
+        <div class="max-w-6xl mx-auto">
+            <!-- Judul dan Tombol -->
+            <div class="flex justify-between items-center mb-6">
+                <h1 class="text-3xl font-bold text-yellow-400">Riwayat Transaksi</h1>
+                <button class="bg-yellow-400 hover:bg-yellow-300 text-gray-900 font-semibold py-2 px-4 rounded-lg shadow">
+                    Ekspor
+                </button>
+            </div>
 
-    <div class="overflow-x-auto bg-white rounded-lg shadow">
-        <table class="min-w-full text-left border border-gray-300 rounded-lg overflow-hidden">
-            <thead class="bg-yellow-100 text-yellow-800">
->>>>>>> 8203dff2196e6a17e1882ed608e4781fc0f84854
-                <tr>
-                    <th class="px-4 py-2 border border-gray-700">No</th>
-                    <th class="px-4 py-2 border border-gray-700">Tanggal</th>
-                    <th class="px-4 py-2 border border-gray-700">Nama Produk</th>
-                    <th class="px-4 py-2 border border-gray-700">Pembeli</th>
-                    <th class="px-4 py-2 border border-gray-700">Jumlah</th>
-                    <th class="px-4 py-2 border border-gray-700">Total</th>
-                </tr>
-            </thead>
-            <tbody>
-                @for($i = 1; $i <= 5; $i++)
-                <tr class="hover:bg-gray-500 text-white">
-                    <td class="px-4 py-2 border border-gray-700">{{ $i }}</td>
-                    <td class="px-4 py-2 border border-gray-700">2025-04-2{{ $i }}</td>
-                    <td class="px-4 py-2 border border-gray-700">Produk {{ $i }}</td>
-                    <td class="px-4 py-2 border border-gray-700">Pembeli {{ $i }}</td>
-                    <td class="px-4 py-2 border border-gray-700">{{ rand(1, 5) }}</td>
-                    <td class="px-4 py-2 border border-gray-700">Rp{{ number_format(rand(10000, 50000), 0, ',', '.') }}</td>
-                </tr>
-                @endfor
-            </tbody>
-        </table>
+            <!-- Tabel Riwayat Transaksi -->
+            <div class="overflow-x-auto bg-gray-800 rounded-xl shadow-lg">
+                <table class="min-w-full border border-gray-700">
+                    <thead class="bg-yellow-500 text-gray-900">
+                        <tr>
+                            <th class="px-4 py-2 border border-gray-700">No</th>
+                            <th class="px-4 py-2 border border-gray-700">Tanggal</th>
+                            <th class="px-4 py-2 border border-gray-700">Nama Produk</th>
+                            <th class="px-4 py-2 border border-gray-700">Pembeli</th>
+                            <th class="px-4 py-2 border border-gray-700">Jumlah</th>
+                            <th class="px-4 py-2 border border-gray-700">Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @for($i = 1; $i <= 5; $i++)
+                        <tr class="hover:bg-gray-700 text-white">
+                            <td class="px-4 py-2 border border-gray-700">{{ $i }}</td>
+                            <td class="px-4 py-2 border border-gray-700">2025-04-2{{ $i }}</td>
+                            <td class="px-4 py-2 border border-gray-700">Produk {{ $i }}</td>
+                            <td class="px-4 py-2 border border-gray-700">Pembeli {{ $i }}</td>
+                            <td class="px-4 py-2 border border-gray-700">{{ rand(1, 5) }}</td>
+                            <td class="px-4 py-2 border border-gray-700">Rp{{ number_format(rand(10000, 50000), 0, ',', '.') }}</td>
+                        </tr>
+                        @endfor
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
 @endsection

@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ProdukController;
-
+use App\Http\Controllers\PesananController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -94,3 +94,6 @@ Route::get('/pembayaran', function () {
 Route::get('/admin/konfirmasi_pembayaran', function () {
     return view('admin/konfirmasi_pembayaran');
 });
+ 
+
+

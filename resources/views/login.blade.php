@@ -28,7 +28,7 @@
 
     <form action="#" method="POST">
       <div class="mb-4 relative">
-        <input type="text" placeholder="Username" class="w-full px-4 py-3 pr-10 bg-transparent border border-yellow-300 rounded-full focus:outline-none focus:ring-2 focus:ring-yellow-500 text-yellow-200 placeholder-yellow-300"/>
+        <input type="text" placeholder="Email" class="w-full px-4 py-3 pr-10 bg-transparent border border-yellow-300 rounded-full focus:outline-none focus:ring-2 focus:ring-yellow-500 text-yellow-200 placeholder-yellow-300"/>
         <span class="absolute right-4 top-1/2 transform -translate-y-1/2 text-yellow-400">
           <!-- Icon user -->
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">

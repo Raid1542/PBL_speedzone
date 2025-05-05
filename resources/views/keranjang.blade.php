@@ -10,10 +10,9 @@
 
   <!-- Navbar -->
   <header class="bg-gradient-to-r from-yellow-400 to-yellow-600 p-6 shadow-lg relative flex items-center justify-center">
-  <!-- Tombol kembali di kiri -->
-  <a href="javascript:history.back()" class="absolute left-6 text-3xl font-semibold text-white hover:text-yellow-200">&larr;</a>
-  <h1 class="text-2xl md:text-3xl font-bold text-white">Keranjang Saya</h1>
-</header>
+    <a href="javascript:history.back()" class="absolute left-6 text-3xl font-semibold text-white hover:text-yellow-200">&larr;</a>
+    <h1 class="text-2xl md:text-3xl font-bold text-white">Keranjang Saya</h1>
+  </header>
 
   <!-- Konten Keranjang -->
   <main class="max-w-5xl mx-auto py-10 px-4">
@@ -73,7 +72,10 @@
           </div>
           <div class="text-right">
             <p class="font-semibold text-yellow-400">${formatRupiah(price)}</p>
-            <button onclick="removeItem('${id}')" class="text-sm text-red-400 mt-2 hover:underline">Hapus</button>
+            <div class="flex items-center justify-end space-x-3 mt-2">
+              <button onclick="editItem('${id}')" class="text-sm text-yellow-300 hover:underline">Edit</button>
+              <button onclick="removeItem('${id}')" class="text-sm text-red-400 hover:underline">Hapus</button>
+            </div>
           </div>
         </div>
       `;
@@ -100,6 +102,10 @@
         el.remove();
         updateTotal();
       }
+    }
+
+    function editItem(id) {
+      alert(`Edit produk dengan ID: ${id}\n(Fitur edit bisa ditambahkan nanti seperti ubah warna, kategori, dll.)`);
     }
 
     function updateTotal() {

@@ -32,8 +32,8 @@
       <a href="dashboard" class="bg-yellow-400 hover:bg-yellow-500 text-blue-900 px-6 py-3 rounded-lg font-semibold shadow-md transition-transform transform hover:scale-105">
         Kembali ke Beranda
       </a>
-      <a href="status_pesanan" class="bg-blue-500 hover:bg-blue-600 text-blue-900 px-6 py-3 rounded-lg font-semibold shadow-md transition-transform transform hover:scale-105">
-        Cek Status Pesanan
+      <a href="pesanan_saya" class="bg-blue-500 hover:bg-blue-600 text-blue-900 px-6 py-3 rounded-lg font-semibold shadow-md transition-transform transform hover:scale-105">
+        Cek Pesanan
       </a>
     </div>
   </main>
