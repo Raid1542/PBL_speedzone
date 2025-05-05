@@ -94,6 +94,23 @@ Route::get('/pembayaran', function () {
 Route::get('/admin/konfirmasi_pembayaran', function () {
     return view('admin/konfirmasi_pembayaran');
 });
- 
+
+Route::get('/admin/profil_admin', function () {
+    return view('admin/profil_admin');
+});
+
+Route::get('/pesanan_saya', function () {
+    return view('pesanan_saya');
+});
+
+Route::get('/admin/produk', function () {
+    return view('admin/produk');
+});
+
+Route::get('/admin/rekap-penjualan', function () {
+    return view('admin/rekap-penjualan');
+});
+
+Route::get('/pembeli/pesanan_saya', [PesananController::class,'index']);
 
 
