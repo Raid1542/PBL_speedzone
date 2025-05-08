@@ -1,8 +1,6 @@
-{{-- resources/views/admin/dashboard.blade.php --}}
-@extends('admin.layout')
+@extends('pages.admin.layout')
 
 @section('title', 'Dashboard Penjual')
-
 @section('judul_halaman', 'Dashboard Penjual')
 
 @section('konten')
@@ -14,8 +12,8 @@
     <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:bg-gray-700 transition-all">
       <h3 class="text-yellow-400 text-2xl font-semibold">Produk Anda</h3>
       <div class="mt-4 text-white">
-        <p class="text-lg">Kategori Produk: <span class="text-yellow-300">4</span></p>
-        <p class="text-lg">Jumlah Produk: <span class="text-yellow-300">30</span></p>
+        <p class="text-lg">Kategori Produk: <span class="text-yellow-300">{{ $kategori_produk }}</span></p>
+        <p class="text-lg">Jumlah Produk: <span class="text-yellow-300">{{ $jumlah_produk }}</span></p>
       </div>
     </div>
 
@@ -23,8 +21,8 @@
     <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:bg-gray-700 transition-all">
       <h3 class="text-yellow-400 text-2xl font-semibold">Pesanan Terbaru</h3>
       <div class="mt-4 text-white">
-        <p class="text-lg">Pesanan Terbaru: <span class="text-yellow-300">2</span></p>
-        <p class="text-lg">Total Pesanan: <span class="text-yellow-300">50</span></p>
+        <p class="text-lg">Pesanan Terbaru: <span class="text-yellow-300">{{ $pesanan_terbaru }}</span></p>
+        <p class="text-lg">Total Pesanan: <span class="text-yellow-300">{{ $total_pesanan }}</span></p>
       </div>
     </div>
 
@@ -32,8 +30,8 @@
     <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:bg-gray-700 transition-all">
       <h3 class="text-yellow-400 text-2xl font-semibold">Pendapatan</h3>
       <div class="mt-4 text-white">
-        <p class="text-lg">Hari Ini: <span class="text-yellow-300">Rp100.000.000</span></p>
-        <p class="text-lg">Bulan Ini: <span class="text-yellow-300">Rp300.000.000</span></p>
+        <p class="text-lg">Hari Ini: <span class="text-yellow-300">Rp{{ number_format($pendapatan_harian, 0, ',', '.') }}</span></p>
+        <p class="text-lg">Bulan Ini: <span class="text-yellow-300">Rp{{ number_format($pendapatan_bulanan, 0, ',', '.') }}</span></p>
       </div>
     </div>
   </div>
@@ -53,18 +51,18 @@
         </tr>
       </thead>
       <tbody>
-        @for($i = 1; $i <= 3; $i++)
+        @foreach($pesanan_list as $pesanan)
         <tr class="hover:bg-gray-700 text-white">
-          <td class="px-4 py-2 border border-gray-700">{{ $i }}</td>
-          <td class="px-4 py-2 border border-gray-700">Produk {{ $i }}</td>
-          <td class="px-4 py-2 border border-gray-700">2</td>
-          <td class="px-4 py-2 border border-gray-700">Dikirim</td>
-          <td class="px-4 py-2 border border-gray-700">Rp200.000</td>
+          <td class="px-4 py-2 border border-gray-700">{{ $pesanan['id'] }}</td>
+          <td class="px-4 py-2 border border-gray-700">{{ $pesanan['produk'] }}</td>
+          <td class="px-4 py-2 border border-gray-700">{{ $pesanan['jumlah'] }}</td>
+          <td class="px-4 py-2 border border-gray-700">{{ $pesanan['status'] }}</td>
+          <td class="px-4 py-2 border border-gray-700">Rp{{ number_format($pesanan['total'], 0, ',', '.') }}</td>
           <td class="px-4 py-2 border border-gray-700 text-blue-400 hover:underline">
             <a href="/admin/konfirmasi_pembayaran">Detail</a>
           </td>
         </tr>
-        @endfor
+        @endforeach
       </tbody>
     </table>
   </div>
