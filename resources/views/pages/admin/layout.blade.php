@@ -1,35 +1,49 @@
+<!-- resources/views/admin/layout.blade.php -->
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <title>@yield('title', 'Speedzone Admin')</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>@yield('title', 'Speedzone Admin')</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-yellow-50 min-h-screen text-gray-800 font-sans">
+<body class="bg-gray-900 text-yellow-300 font-sans">
 
-    <!-- NAVBAR -->
-    <header class="bg-yellow-100 shadow p-4 flex justify-between items-center">
-        <!-- Logo & Nama -->
-        <div class="flex items-center gap-2">
-            <img src="{{ asset('images/LogoSpeedzone.jpg') }}" alt="Logo Speedzone" class="w-10 h-10 rounded-full object-cover">
-            <span class="font-semibold text-lg text-yellow-700">Speedzone</span>
-        </div>
+  <div class="flex h-screen flex-col">
 
-        <!-- Navigasi Tengah -->
-        <nav class="flex gap-6 text-yellow-700 font-medium">
-            <a href="/admin/dashboard" class="@if(request()->is('dashboard')) font-bold underline @endif hover:underline">Dashboard</a>
-            <a href="/admin/riwayat-transaksi" class="@if(request()->is('admin/riwayat-transaksi')) font-bold underline @endif hover:underline">Riwayat</a>
-            <a href="/admin/produk" class="@if(request()->is('admin/produk')) font-bold underline @endif hover:underline">Produk</a>
-        </nav>
+    <!-- Navbar -->
+    <nav class="bg-gradient-to-r from-yellow-400 to-yellow-600 shadow-md py-4 px-6 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <img src="{{ asset('images/LogoSpeedzone.jpg') }}" alt="Logo" class="h-14 w-14 rounded-full object-cover">
+        <span class="text-2xl font-bold tracking-wide text-white">SpeedZone</span>
+      </div>
+      <div class="absolute left-1/2 transform -translate-x-1/2">
+        <span class="text-2xl font-bold tracking-wide text-white">@yield('judul_halaman', 'Dashboard Penjual')</span>
+      </div>
+    </nav>
 
-        <!-- Logout -->
-        <a href="/logout" class="text-sm text-red-600 hover:underline">Logout</a>
-    </header>
+    <div class="flex flex-1">
 
-    <!-- KONTEN -->
-    <main class="max-w-6xl mx-auto px-4 py-8">
+      <!-- SIDEBAR -->
+      <aside class="bg-gray-800 w-64 p-4">
+        <div class="text-yellow-300 text-lg font-semibold mb-8">Menu</div>
+        <ul class="space-y-4">
+          <li><a href="/admin/dashboard" class="block text-white hover:bg-yellow-500 hover:text-gray-900 px-4 py-2 rounded-lg">Dashboard</a></li>
+          <li><a href="/admin/produk" class="block text-white hover:bg-yellow-500 hover:text-gray-900 px-4 py-2 rounded-lg">Produk</a></li>
+          <li><a href="/admin/konfirmasi_pembayaran" class="block text-white hover:bg-yellow-500 hover:text-gray-900 px-4 py-2 rounded-lg">Pesanan</a></li>
+          <li><a href="/admin/rekap-penjualan" class="block text-white hover:bg-yellow-500 hover:text-gray-900 px-4 py-2 rounded-lg">Rekap Penjualan</a></li>
+          <li><a href="/logout" class="block text-red-500 hover:bg-red-700 hover:text-white px-4 py-2 rounded-lg">Logout</a></li>
+        </ul>
+      </aside>
+
+      <!-- MAIN CONTENT -->
+      <main class="flex-1 p-6 overflow-y-auto">
         @yield('konten')
-    </main>
+      </main>
+
+    </div>
+
+  </div>
 
 </body>
 </html>
