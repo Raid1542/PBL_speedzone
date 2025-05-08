@@ -7,5 +7,7 @@ use Illuminate\Http\Request;
 
 class PembelianController extends Controller
 {
-    //
+    public function pembelian() {
+        return view('pages.pembeli.pembelian');
+    }
 }

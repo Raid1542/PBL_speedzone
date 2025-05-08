@@ -4,7 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Pembayaran | SpeedZone</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
 </head>
 <body class="bg-gray-900 text-white font-sans">
 
@@ -17,9 +18,9 @@
 <main class="max-w-5xl mx-auto py-10 px-4">
   <h1 class="text-3xl font-bold text-yellow-300 mb-6">Ringkasan Pembayaran</h1>
 
-  <div class="bg-gray-800 p-6 rounded-lg shadow-lg flex items-center justify-between">
+  <div class="bg-gray-800 p-6 rounded-lg shadow-lg flex flex-col md:flex-row md:items-center justify-between">
     <div class="flex items-center gap-6">
-      <img src="images/Honda1.jpg" alt="Produk Motor" class="rounded-lg w-48 h-48 object-cover">
+      <img src="/images/Honda1.jpg" alt="Produk Motor" class="rounded-lg w-48 h-48 object-cover">
       <div>
         <h2 class="font-semibold text-white text-2xl">Motor Model XYZ</h2>
         <p class="text-sm text-gray-400">Deskripsi motor demo yang sangat stylish dan modern.</p>

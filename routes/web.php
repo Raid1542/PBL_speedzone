@@ -3,6 +3,12 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\PesananController;
+use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Admin\ProdukController;
+use App\Http\Controllers\Admin\KonfirmasiPembayaranController;
+use App\Http\Controllers\Pembeli\PembelianController;
+use App\Http\Controllers\Pembeli\EditProfilController;
+use App\Http\Controllers\Pembeli\ProfilController;
 
 
 # ----------------------------HALAMAN UMUM-------------------------------------------- #
@@ -32,9 +38,9 @@ Route::controller(AuthController::class)->group(function () {
 Route::prefix('pembeli')->group(function () {
     Route::view('/dashboard', 'dashboard')->name('pembeli.dashboard');
     Route::view('/keranjang', 'keranjang')->name('keranjang');
-    Route::view('/pembelian', 'pembelian')->name('pembelian');
-    Route::view('/edit_profil', 'edit_profil')->name('edit_profil');
-    Route::view('/profil', 'profil')->name('profil');
+    Route::get('/pembelian', [PembelianController::class, 'pembelian'])->name('pembelian');
+    Route::get('/edit_profil', [EditProfilController::class, 'edit_profil'])->name('edit_profil');
+    Route::get('/profil', [ProfilController::class, 'profil'])->name('profil');
     Route::view('/status_pesanan', 'status_pesanan')->name('status_pesanan');
     Route::view('/resi', 'resi')->name('resi');
     Route::get('/pesanan_saya', [PesananController::class, 'index'])->name('pesanan_saya');
@@ -48,13 +54,10 @@ Route::prefix('pembeli')->group(function () {
 # ----------------------------ADMIN-------------------------------------------- #
 
 Route::prefix('admin')->group(function () {
-    Route::view('/dashboard', 'admin.dashboard')->name('admin.dashboard');
+    Route::view('/dashboard', 'pages.admin.dashboard')->name('pages.admin.dashboard');
     Route::view('/riwayat-transaksi', 'admin.riwayat-transaksi')->name('admin.riwayat-transaksi');
-    Route::view('/produk', 'admin.produk')->name('admin.produk.index');
-    Route::view('/produk/create', 'admin.produk.create')->name('admin.produk.create');
-    Route::view('/rekap-penjualan', 'admin.rekap-penjualan')->name('admin.rekap-penjualan');
-    Route::view('/konfirmasi_pembayaran', 'admin.konfirmasi_pembayaran')->name('admin.konfirmasi_pembayaran');
-    Route::view('/profil_admin', 'admin.profil_admin')->name('admin.profil_admin');
+    Route::view('/rekap-penjualan', 'pages.admin.rekap-penjualan')->name('admin.rekap-penjualan');
+    Route::view('/konfirmasi_pembayaran', 'pages.admin.konfirmasi_pembayaran')->name('admin.konfirmasi_pembayaran');
 });
 
 
