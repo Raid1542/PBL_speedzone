@@ -2,115 +2,60 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
-use App\Http\Controllers\ProdukController;
 use App\Http\Controllers\PesananController;
 
-Route::get('/', function () {
-    return view('welcome');
+
+# ----------------------------HALAMAN UMUM-------------------------------------------- #
+
+
+Route::view('/', 'welcome');
+
+
+# ----------------------------AUTENTIKASI-------------------------------------------- #
+
+Route::controller(AuthController::class)->group(function () {
+    // Login
+    Route::get('/login', 'showLoginForm')->name('login');
+    Route::post('/login', 'login');
+
+    // Register
+    Route::get('/register', 'showRegisterForm')->name('register');
+    Route::post('/register', 'register');
+
+    // Reset Password
+    Route::get('/reset_password', 'showResetPasswordForm')->name('password.reset');
+    Route::post('/reset_password', 'updatePassword')->name('password.update');
 });
 
-# Route Login #
-Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
-Route::post('/login', [AuthController::class, 'login']);
+# ----------------------------PEMBELI-------------------------------------------- #
 
-# Route Register #
-Route::get('/register', [AuthController::class, 'showRegisterForm'])->name('register');
-Route::post('/register', [AuthController::class, 'register']);
-
-# Route Ubah Kata Sandi #
-Route::get('/reset_password', [AuthController::class, 'showResetPasswordForm'])->name('password.reset');
-Route::post('/reset_password', [AuthController::class, 'updatePassword'])->name('password.update');
-
-# Route Resi #
-Route::get('/resi', function () {
-    return view('resi');
+Route::prefix('pembeli')->group(function () {
+    Route::view('/dashboard', 'dashboard')->name('pembeli.dashboard');
+    Route::view('/keranjang', 'keranjang')->name('keranjang');
+    Route::view('/pembelian', 'pembelian')->name('pembelian');
+    Route::view('/edit_profil', 'edit_profil')->name('edit_profil');
+    Route::view('/profil', 'profil')->name('profil');
+    Route::view('/status_pesanan', 'status_pesanan')->name('status_pesanan');
+    Route::view('/resi', 'resi')->name('resi');
+    Route::get('/pesanan_saya', [PesananController::class, 'index'])->name('pesanan_saya');
+    Route::view('/tentang_kami', 'tentang_kami');
+    Route::view('/produk', 'produk');
+    Route::view('/deskripsi', 'deskripsi');
+    Route::view('/pembayaran', 'pembayaran');
+    Route::view('/terimakasih', 'terimakasih');
 });
 
-# Route Keranjang #
-Route::get('/keranjang', function () {
-    return view('keranjang');
+# ----------------------------ADMIN-------------------------------------------- #
+
+Route::prefix('admin')->group(function () {
+    Route::view('/dashboard', 'admin.dashboard')->name('admin.dashboard');
+    Route::view('/riwayat-transaksi', 'admin.riwayat-transaksi')->name('admin.riwayat-transaksi');
+    Route::view('/produk', 'admin.produk')->name('admin.produk.index');
+    Route::view('/produk/create', 'admin.produk.create')->name('admin.produk.create');
+    Route::view('/rekap-penjualan', 'admin.rekap-penjualan')->name('admin.rekap-penjualan');
+    Route::view('/konfirmasi_pembayaran', 'admin.konfirmasi_pembayaran')->name('admin.konfirmasi_pembayaran');
+    Route::view('/profil_admin', 'admin.profil_admin')->name('admin.profil_admin');
 });
 
-# Route Pembelian #
-Route::get('/pembelian', function () {
-    return view('pembelian');
-});
-
-# Route Dashboard #
-Route::get('/dashboard', function () {
-    return view('dashboard');
-});
-
-# Route Deskripsi #
-Route::get('/deskripsi', function () {
-    return view('deskripsi');
-});
-
-# Route Produk #
-Route::get('/produk', function () {
-    return view('produk');
-});
-
-# Route Edit Profil #
-Route::get('/edit_profil', function () {
-    return view('edit_profil');
-});
-
-# Route Profil #
-Route::get('/profil', function () {
-    return view('profil');
-});
-
-# Route Dashboard Admin #
-Route::get('/admin/dashboard', function () {
-    return view('admin.dashboard');
-})->name('dashboard');
-
-# Route Admin Riwayat Transaksi #
-Route::view('/admin/riwayat-transaksi', 'admin.riwayat-transaksi')->name('riwayat-transaksi');
-
-# Route Admin CRUD #
-Route::get('/admin/produk/create', function () {
-    return view('admin.produk.create');
-})->name('create');
-
-Route::get('/terimakasih', function () {
-    return view('terimakasih');
-});
-
-Route::get('/status_pesanan', function () {
-    return view('status_pesanan');
-});
-
-
-Route::get('/tentang_kami', function () {
-    return view('tentang_kami');
-});
-
-Route::get('/pembayaran', function () {
-    return view('pembayaran');
-});
-
-Route::get('/admin/konfirmasi_pembayaran', function () {
-    return view('admin/konfirmasi_pembayaran');
-});
-
-Route::get('/admin/profil_admin', function () {
-    return view('admin/profil_admin');
-});
-
-Route::get('/pesanan_saya', function () {
-    return view('pesanan_saya');
-});
-
-Route::get('/admin/produk', function () {
-    return view('admin/produk');
-});
-
-Route::get('/admin/rekap-penjualan', function () {
-    return view('admin/rekap-penjualan');
-});
-
-Route::get('/pembeli/pesanan_saya', [PesananController::class,'index']);
 
 
