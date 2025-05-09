@@ -26,6 +26,6 @@ class ProdukController extends Controller
             ],
         ];
 
-        return view('produk.index', compact('produk'));
+        return view('.peges.pembeli.produk', compact('produk'));
     }
 }

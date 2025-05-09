@@ -9,6 +9,7 @@ use App\Http\Controllers\Admin\KonfirmasiPembayaranController;
 use App\Http\Controllers\Pembeli\PembelianController;
 use App\Http\Controllers\Pembeli\EditProfilController;
 use App\Http\Controllers\Pembeli\ProfilController;
+use App\Http\Controllers\HomeController;
 
 
 # ----------------------------HALAMAN UMUM-------------------------------------------- #

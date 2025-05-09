@@ -4,8 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Produk | Speedzone</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  
+  <link href="styles/flowbite.min.css" rel="stylesheet" />
+  <script src="styles/flowbite.min.js"></script>
+
+
   <style>
     .kategori-active {
       font-weight: bold;
