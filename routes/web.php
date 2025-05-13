@@ -12,6 +12,8 @@ use App\Http\Controllers\Pembeli\ProfilController;
 use App\Http\Controllers\HomeController;
 
 
+
+
 # ----------------------------HALAMAN UMUM-------------------------------------------- #
 
 
@@ -60,6 +62,4 @@ Route::prefix('admin')->group(function () {
     Route::view('/rekap-penjualan', 'pages.admin.rekap-penjualan')->name('admin.rekap-penjualan');
     Route::view('/konfirmasi_pembayaran', 'pages.admin.konfirmasi_pembayaran')->name('admin.konfirmasi_pembayaran');
 });
-
-
 
