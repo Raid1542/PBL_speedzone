@@ -56,10 +56,10 @@
         <a href="edit_profil" class="w-full text-center bg-yellow-400 hover:bg-yellow-300 text-gray-900 py-2 px-4 rounded font-semibold">
           Edit Profil
         </a>
-        <a href="reset_password" class="w-full text-center bg-yellow-400 hover:bg-yellow-300 text-gray-900 py-2 px-4 rounded font-semibold">
+        <a href="/reset_password" class="w-full text-center bg-yellow-400 hover:bg-yellow-300 text-gray-900 py-2 px-4 rounded font-semibold">
           Ubah Kata Sandi
         </a>
-        <a href="login" class="w-full text-center bg-yellow-400 hover:bg-yellow-300 text-gray-900 py-2 px-4 rounded font-semibold">
+        <a href="/login" class="w-full text-center bg-yellow-400 hover:bg-yellow-300 text-gray-900 py-2 px-4 rounded font-semibold">
           Logout
         </a>
       </div>
