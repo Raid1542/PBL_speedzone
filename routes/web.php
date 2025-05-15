@@ -10,7 +10,8 @@ use App\Http\Controllers\Pembeli\PembelianController;
 use App\Http\Controllers\Pembeli\EditProfilController;
 use App\Http\Controllers\Pembeli\ProfilController;
 use App\Http\Controllers\HomeController;
-
+use App\Http\Controllers\DetailController;
+use App\Http\Controllers\PembeliProdukController;
 
 
 
@@ -62,4 +63,5 @@ Route::prefix('admin')->group(function () {
     Route::view('/rekap-penjualan', 'pages.admin.rekap-penjualan')->name('admin.rekap-penjualan');
     Route::view('/konfirmasi_pembayaran', 'pages.admin.konfirmasi_pembayaran')->name('admin.konfirmasi_pembayaran');
 });
+
 
