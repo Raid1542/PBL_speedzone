@@ -30,6 +30,6 @@ class KonfirmasiPembayaranController extends Controller
         ];
 
         // Kirim data ke view
-        return view('pages.admin.konfirmasi.index', compact('pembayaranList'));
+        return view('pages.admin.konfirmasi_pembayaran', compact('pembayaranList'));
     }
 }
