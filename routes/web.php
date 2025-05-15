@@ -49,7 +49,6 @@ Route::prefix('pembeli')->group(function () {
     Route::view('/resi', 'resi')->name('resi');
     Route::get('/pesanan_saya', [PesananController::class, 'index'])->name('pesanan_saya');
     Route::view('/tentang_kami', 'tentang_kami');
-    Route::view('/produk', 'produk');
     Route::view('/deskripsi', 'deskripsi');
     Route::view('/pembayaran', 'pembayaran');
     Route::view('/terimakasih', 'terimakasih');
@@ -70,3 +69,10 @@ Route::prefix('admin')->group(function () {
     Route::get('/konfirmasi_pembayaran', [KonfirmasiPembayaranController::class, 'index'])->name('admin.konfirmasi.index');
 });
 
+Route::get('/produk_detail', function () {
+    return view('pages.pembeli.produk_detail', ['title' => 'Detail Produk']);
+});
+
+Route::get('/produk', [PembeliProdukController::class,'index']);
+
+Route::get('/', [HomeController::class, 'index'])->name('home');
