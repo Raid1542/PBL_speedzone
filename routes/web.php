@@ -10,14 +10,15 @@ use App\Http\Controllers\Pembeli\PembelianController;
 use App\Http\Controllers\Pembeli\EditProfilController;
 use App\Http\Controllers\Pembeli\ProfilController;
 use App\Http\Controllers\HomeController;
-
+use App\Http\Controllers\DetailController;
+use App\Http\Controllers\PembeliProdukController;
 
 
 
 # ----------------------------HALAMAN UMUM-------------------------------------------- #
 
 
-Route::view('/', 'welcome');
+Route::view('/02', 'welcome');
 
 
 # ----------------------------AUTENTIKASI-------------------------------------------- #

@@ -22,7 +22,7 @@
   <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4 z-30 backdrop-blur-none">
     <h1 class="text-4xl md:text-5xl font-bold mb-4 drop-shadow-lg">Temukan Motor Impian Anda</h1>
     <p class="text-lg md:text-xl mb-6 max-w-xl drop-shadow">Dapatkan motor sport terbaik dengan harga bersaing dan proses cepat hanya di SpeedZone.</p>
-    <a href="{{ url('produk') }}" class="bg-yellow-400 text-gray-900 px-6 py-3 rounded-full font-semibold hover:bg-yellow-300 transition duration-300">Lihat Produk Sekarang</a>
+    <a href="{{ url('/pages/pembeli/produk') }}" class="bg-yellow-400 text-gray-900 px-6 py-3 rounded-full font-semibold hover:bg-yellow-300 transition duration-300">Lihat Produk Sekarang</a>
   </div>
 
   <!-- Slider controls -->
@@ -57,10 +57,10 @@
       <h3 class="font-semibold text-xl text-blue-800">{{ $motor['nama'] }}</h3>
       <p class="text-yellow-600 mt-1">{{ $motor['harga'] }}</p>
       <div class="mt-4 flex gap-3">
-  <a href="{{ url('deskripsi') }}" class="flex-1 text-center bg-yellow-400 text-gray-900 px-5 py-2.5 rounded-lg text-sm font-semibold shadow-md hover:bg-yellow-300 transition duration-300">
+  <a href="{{ url('/psges/pembeli/produk_detail') }}" class="flex-1 text-center bg-yellow-400 text-gray-900 px-5 py-2.5 rounded-lg text-sm font-semibold shadow-md hover:bg-yellow-300 transition duration-300">
     Lihat Detail
   </a>
-  <form action="{{ url('keranjang/tambah') }}" method="POST" class="flex-1">
+  <form action="{{ url('/pages/pembeli/keranjang') }}" method="POST" class="flex-1">
     @csrf
     <input type="hidden" name="produk" value="{{ $motor['nama'] }}">
     <button type="submit" class="w-full bg-yellow-400 text-gray-900 px-5 py-2.5 rounded-lg text-sm font-semibold shadow-md hover:bg-yellow-300 transition duration-300">
