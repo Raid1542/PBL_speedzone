@@ -10,7 +10,7 @@ class AuthController extends Controller
 {
     public function showLoginForm()
     {
-        return view('login');
+        return view('pages.login');
     }
 
     public function login(Request $request)
@@ -32,7 +32,7 @@ class AuthController extends Controller
 
     public function showRegisterForm()
 {
-    return view('register');
+    return view('pages.pembeli.register');
 }
 
 public function register(Request $request)
@@ -56,7 +56,7 @@ public function register(Request $request)
 
 public function showResetPasswordForm()
 {
-    return view('reset_password');
+    return view('pages.pembeli.reset_password');
 }
 
 public function updatePassword(Request $request)

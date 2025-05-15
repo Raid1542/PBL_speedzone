@@ -18,7 +18,7 @@ use App\Http\Controllers\PembeliProdukController;
 # ----------------------------HALAMAN UMUM-------------------------------------------- #
 
 
-Route::view('/', 'welcome');
+Route::view('/02', 'welcome');
 
 
 # ----------------------------AUTENTIKASI-------------------------------------------- #
@@ -63,5 +63,4 @@ Route::prefix('admin')->group(function () {
     Route::view('/rekap-penjualan', 'pages.admin.rekap-penjualan')->name('admin.rekap-penjualan');
     Route::view('/konfirmasi_pembayaran', 'pages.admin.konfirmasi_pembayaran')->name('admin.konfirmasi_pembayaran');
 });
-
 
